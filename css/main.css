@@ -1,0 +1,64 @@
+html {
+    font-family: 'Calibri', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    background-color: rgba(240,240,240,1);
+    
+}
+
+body {
+    width: 100%;
+}
+#header{
+    background: linear-gradient(#40A755,#64BA56, #2D9D54);
+    height: 50vh;
+}
+
+h1{
+	color: rgba(240,240,240,1);
+	font-size: 3em;
+    font-family: 'Roboto Condensed', sans-serif, regular;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.7em;
+    font-family: Trebuchet, sans-serif
+}
+
+p {
+    font-size: 0.9em;
+}
+
+
+
+.container{
+    width:90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.item{
+    flex-grow:2;
+    flex-basis: 0;
+    margin: 0; 
+    padding:10px;
+
+}
+
+.title{
+    flex-grow:3;
+    flex-basis: 0;
+    margin: 0;
+    padding:10px;
+
+}
+
+
+
+
