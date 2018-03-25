@@ -10,53 +10,75 @@ body {
     width: 100%;
 }
 #header{
-    background: linear-gradient(#40A755,#64BA56, #2D9D54);
-    height: 50vh;
+    height: 100vh;
+}
+
+#iphone{
+    margin:auto;
+
 }
 
 h1{
-	color: rgba(240,240,240,1);
-	font-size: 3em;
+	color: rgba(64,64,64,1);
+	font-size: 5em;
     font-family: 'Roboto Condensed', sans-serif, regular;
-    font-size: 48px;
     line-height: 56px;
-    text-align: center;
+    
 }
 
 h3{
-    font-size: 1.7em;
-    font-family: Trebuchet, sans-serif
+    font-size: 1em;
+    font-family: 'Roboto Condensed', sans-serif, regular;
 }
 
 p {
     font-size: 0.9em;
+    font-family: 'Roboto Condensed', sans-serif, regular;
+    text-align:center;
 }
 
+#title{
+    margin:auto;
+        margin-left: 0;
+    margin-right: 0;
 
+}
 
 .container{
-    width:90%;
+    width:70%;
+    height:100vh;
     display: flex;
-    flex-wrap: wrap;
-    margin: auto;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /*margin: auto;*/
+    margin-left: 15%;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
 .item{
-    flex-grow:2;
-    flex-basis: 0;
+    /*flex-grow:3;*/
+    flex-basis: 33%;
     margin: 0; 
-    padding:10px;
+}
+
+.item > img {
+    margin-left: calc(50% - 125px);
+}
+
+.item > p {
+    margin-left: calc(50% - 125px);
+    width: 250px;
+}
+
+#title{
+    padding:40px;
 
 }
 
-.title{
-    flex-grow:3;
-    flex-basis: 0;
-    margin: 0;
-    padding:10px;
-
+.titleitem{
+    flex-basis: 50%;
+    margin:0;
 }
 
 
