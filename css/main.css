@@ -2,27 +2,25 @@ html {
     font-family: 'Calibri', sans-serif;
     font-size: 16px;
     overflow-x: hidden;
-    background-color: rgba(240,240,240,1);
+    /*background-color: rgba(240,240,240,1);*/
+    background-color: rgba(249, 249, 249,1);
     
 }
 
 body {
     width: 100%;
 }
-#header{
-    height: 100vh;
-}
+
 
 #iphone{
     margin:auto;
-
 }
 
 h1{
 	color: rgba(64,64,64,1);
 	font-size: 5em;
     font-family: 'Roboto Condensed', sans-serif, regular;
-    line-height: 56px;
+
     
 }
 
@@ -39,18 +37,23 @@ p {
 
 #title{
     margin:auto;
-        margin-left: 0;
+    margin-left: 0;
     margin-right: 0;
-
 }
 
+.titleitem{
+    text-align:center;
+}
+
+#checkmark{
+    margin-bottom:20px;
+}
 .container{
     width:70%;
-    height:100vh;
+    min-height:100%;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
-    /*margin: auto;*/
     margin-left: 15%;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -59,7 +62,23 @@ p {
 .item{
     /*flex-grow:3;*/
     flex-basis: 33%;
-    margin: 0; 
+    margin: auto; 
+}
+
+#img{
+    flex-basis:55%;
+    margin-top:20%;
+    width:100%;
+}
+
+#text{
+    flex-basis:45%;
+    margin-top:30%;
+}
+
+.description{
+ 
+    text-align: left;
 }
 
 .item > img {
@@ -71,16 +90,73 @@ p {
     width: 250px;
 }
 
-#title{
-    padding:40px;
 
-}
-
-.titleitem{
-    flex-basis: 50%;
+#demo{ 
+    width:100%;
     margin:0;
 }
 
+.description > img{
+    width:100%;
+}
 
 
+@media(max-width: 1150px ){
+    #space{
+        width:100%;
+        margin:0;
+    }
+
+}
+
+@media (max-width:1000px){
+
+
+.titleitem h1{
+    text-align:left;
+    font-size:3em;
+    float:left;
+    margin:0;
+    
+}
+
+.titleitem h3{
+    text-align:left;
+    font-size:1em;
+    margin:0;
+
+}
+
+#title{
+    float:left;
+    margin-left:30px;
+    margin-right:auto;
+}
+
+#checkmark{
+    width:50px;
+    margin-left:10;
+}
+
+.container{
+    width:100%;
+    margin:0;
+    flex-wrap: wrap;
+    /*height:auto;*/
+    min-height: 0;
+}
+    #img{
+    display: none;
+}
+
+    #text{
+    flex-basis:100%;
+    margin-top:0;
+    padding:20px;
+}
+.item{
+    flex-basis: 100%;
+    margin-bottom: 40px; 
+}
+} 
 
