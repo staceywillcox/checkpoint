@@ -59,6 +59,7 @@ p {
     margin-left: 15%;
     padding-top: 15px;
     padding-bottom: 15px;
+    align-items:flex-start;
 }
 
 .item{
@@ -159,6 +160,10 @@ p {
 .item{
     flex-basis: 100%;
     margin-bottom: 40px; 
+}
+
+#description p{
+    text-align:left;
 }
 } 
 
