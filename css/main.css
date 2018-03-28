@@ -160,7 +160,7 @@ p {
     margin-bottom: 40px; 
 }
 
-#description p{
+.description > p{
     text-align:left;
 }
 } 
